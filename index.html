@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Binary Clock</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/baloon.css" />
+  </head>
+  <body>
+    <div class="clock">
+      <div class="group1">
+        <div class="circle h-1"></div>
+        <div class="circle h-1"></div>
+      </div>
+      <div class="group2">
+        <div class="circle h-2"></div>
+        <div class="circle h-2"></div>
+        <div class="circle h-2"></div>
+        <div class="circle h-2"></div>
+      </div>
+      <div class="group1">
+        <div class="circle m-1"></div>
+        <div class="circle m-1"></div>
+        <div class="circle m-1"></div>
+      </div>
+      <div class="group2">
+        <div class="circle m-2"></div>
+        <div class="circle m-2"></div>
+        <div class="circle m-2"></div>
+        <div class="circle m-2"></div>
+      </div>
+      <div class="group1">
+        <div class="circle s-1"></div>
+        <div class="circle s-1"></div>
+        <div class="circle s-1"></div>
+      </div>
+      <div class="group2">
+        <div class="circle s-2"></div>
+        <div class="circle s-2"></div>
+        <div class="circle s-2"></div>
+        <div class="circle s-2"></div>
+      </div>
+    </div>
+    <div id="dec-clock">
+      <div
+        id="dc"
+        class="tooltip"
+        aria-label="Decimal Time. Press [D] to toggle"
+        data-balloon-pos="up"
+      ></div>
+    </div>
+    <div id="hex-clock">
+      <div
+        id="hc"
+        aria-label="Hexadecimal Time. Press [H] to toggle"
+        data-balloon-pos="right"
+      ></div>
+    </div>
+    <div id="bin-clock">
+      <div
+        id="bc"
+        aria-label="Binary Time Press. [B] to toggle"
+        data-balloon-pos="right"
+      ></div>
+    </div>
+    <div id="metric-clock">
+      <div
+        id="mc"
+        aria-label="Mertic Time Press. [M] to toggle"
+        data-balloon-pos="down"
+      ></div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
